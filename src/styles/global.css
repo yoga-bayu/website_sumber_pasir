@@ -1,3 +1,588 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.home {
+    background-image: url("../asset/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    margin-right: -70px;
+}
+
+.navbar ul li.list:hover {
+    color: #4169e1;
+}
+
+.header {
+    min-height: 66px;
+    padding: 0 100px 10px;
+}
+
+.logo {
+    margin-left: -50px;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+.textLogo {
+    margin-left: 20px;
+    margin-top: -5px;
+    font-family: "Lobster", sans-serif;
+}
+
+button .galery {
+    background-color: #4169e1;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+
+
+button .galery:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.header ul li {
+    position: relative;
+    list-style: none;
+    position: relative;
+    float: left;
+}
+
+.header ul li a {
+    font-size: 1.2rem;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul li ul {
+    position: absolute;
+    left: 0;
+    width: 120px;
+    display: none;
+    background-color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.header ul li:hover ul {
+    display: block;
+    color: #111;
+}
+
+.header ul li ul li {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.produk:hover {
+    background-color: #4169e1;
+    color: #fff;
+}
+
+.text {
+    margin-left: 50px;
+    margin-top: 200px;
+
+}
+
+.tombol_menu {
+    margin-top: 430px;
+    margin-left: 50px;
+    background-color: #4169e1;
+    border-radius: 10px;
+    transition: .2s ease-in-out
+}
+
+.tombol_menu:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.tombol .tombol_menu:hover {
+    color: black;
+}
+
+/* about section */
+
+.alasan-section {
+    background-color: #ebf0ff;
+    width: 100%;
+    min-height: 100vh;
+    color: #081744;
+}
+
+.card .cardBox {
+    /* flex: 1 1 30rem; */
+    margin-top: 80px;
+    width: 350px;
+    background-color: #fff;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.img-ongkir {
+    width: 100px;
+    height: 60px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.img-muatan {
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+  
+}
+
+.img-cod {
+    width: 100px;
+    height: 60px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+   
+}
+
+
+.cardText {
+    margin-top: -20px;
+}
+
+/* SECTION PRODUK */
+
+.produk-section {
+    min-height: 100vh;
+    color: #081744;
+}
+
+.cardProduk {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 10px 10px 30px 10px;
+}
+
+.btn-produk {
+    background-color: #4169e1;
+    transition: .2s ease-in-out;
+}
+
+.btn-produk:hover {
+    background-color: #081744;
+}
+
+/* SECTION CLOSING */
+
+.closing {
+    min-height: 100vh;
+}  
+
+.card-closing {
+    /* background-color: #ebf0ff; */
+    background: linear-gradient(to bottom, #fff, #ebf0ff);
+
+    
+}
+
+.closing-first {
+    background-color: #ebf0ff;
+    color: #081744;
+}
+
+  .image-logo {
+    flex: 0 0 auto; /* Mengatur ukuran gambar agar tidak melebar */
+    margin-right: 10px; /* Jarak antara gambar dan teks */
+  }
+  
+  .text-logo {
+    flex: 1; /* Mengisi sisa ruang kosong dengan teks */
+  }
+
+  .text-produk {
+    color: #081744;
+  }
+
+.body-slide {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.container-slide {
+    max-width: 1200px;
+    width: 95%;
+}
+
+/* .slide-button {
+    position: absolute;
+    top: 3030px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: #152657;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transform: translateY(-50%);
+}
+
+.slide-button:hover {
+    background-color: #4169e1;
+} */
+
+.slide-button#prev-slide {
+    left: 50px;
+}
+
+.slide-button#next-slide {
+    right: 50px;
+}
+
+.image-list {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    overflow-x: auto;
+    font-size: 0;
+    scrollbar-width: none;
+    margin-bottom: -30px;
+}
+
+.image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+
+.scrollbar-thumb:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.scrollbar-thumb {
+    border: inherit;
+    cursor: grab;
+}
+
+.scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+.text-cta {
+    flex: 1;
+}
+
+.image-cta {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+.closing-cta {
+    width: 900px;
+    height: 170px;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 55px rgba(0, 0, 0, 0.2);
+}
+
+.h1-cta {
+    color: #4169e1;
+}
+
+.p-cta {
+    color: #081744;
+}
+
+.btn-cta {
+    margin-left: 650px;
+    margin-top: -60px;
+    color:#fff;
+    width: 150px;
+    background-color: #4169e1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btn-cta:hover {
+    background-color: #081744;
+}
+
+.text-cus {
+    color: #081744;
+    margin-bottom: 30px;
+}
+
+.card-customer {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    margin: 10px 10px 30px 10px;
+}
+
+.container-footer {
+    color: #fff;
+    background-color: #152657;
+}
+
+.body {
+    min-height: 100vh;
+    /* padding: 50px; */
+    margin-top: -300px;
+}
+
+/* .footer {
+    padding: 50px 100px;  
+} */
+
+.container-footer {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.icon-footer {
+    grid-template-columns: repeat(4, 50px);
+}
+
+.icon-footer li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.informasi-footer {
+    display: inline-block;
+}
+
+.informasi-footer ul li ul {
+    position: absolute;
+    left: 0;
+    width: 120px;
+    display: none;
+    background-color: #fff;
+    transition: 5s ease-in-out;
+}
+
+.informasi-footer ul li:hover ul {
+    display: block;
+    color: #111;
+}
+
+.informasi-footer ul li ul li {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.informasi-footer ul li:hover {
+    color: #4169e1
+}
+
+.informasi-footer ul li ul li:hover {
+    background-color: #4169e1;
+    color: #fff;
+}
+
+.copyRightText {
+    padding: 20px 100px 30px;
+    text-align: center;
+    background-color: #152657;
+    border: 1px solid rgba(0,0,0,0.50);
+}
+
+.icon-footer .linkin {
+    border-radius: 5px;
+} 
+
+/* ABOUT PAGE */
+.about-section {
+    background-color: #ebf0ff;
+}
+.about {
+    background-image: url("../asset/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 510px;
+    /* min-height: 100vh;
+    width: 100%; */
+}
+
+.about-info {
+    width: 1090px;
+    height: 190px;
+    box-shadow: 0px 5px 55px rgba(0, 0, 0, 0.2);
+}
+
+.h1-about {
+    color: #081744;
+}
+
+.about-section-info {
+    /* background-color: #ebf0ff; */
+    background: linear-gradient(to bottom, #ebf0ff, #fff);
+
+}
+
+.order {
+    color: #081744;
+    /* background-color: #ebf0ff; */
+}
+
+.order-about {
+    /* margin-top: 10px; */
+    width: 380px;
+    padding: 3rem 2rem 4rem;
+    text-align: left;
+}
+
+.list li{
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.list .list-li:hover {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.list li:hover .keterangan {
+    display: block;
+    color: #152657;
+    /* color: #152657 */
+}
+
+.list-card:hover {
+    height: 500px;
+}
+
+
+
+
+/* BATU */
+.card-batu .cardBox-batu {
+    /* flex: 1 1 30rem; */
+    margin-top: 100px;
+    width: 600px;
+    background-color: #fff;
+    padding: 1rem 1rem 4rem;
+    text-align: left;
+    margin-bottom: -80px;
+    box-shadow: 0px 5px 55px rgba(0, 0, 0, 0.2);
+}
+
+
+/* HALAMAN KONTAK */
+.konsultasi {
+    /* background-color: #ebf0ff; */
+    background: linear-gradient(to bottom, #ebf0ff, #fff);
+
+}
+
+.konsultasi button {
+    background-color: #4169e1;
+    transition: .5s ease;
+}
+
+.konsultasi button:hover {
+    background-color: #152657;
+}
+
+.konsultasi-cta {
+    background-color: #4169e1;
+    transition: .5s ease;
+}
+
+.konsultasi-cta:hover {
+    background-color: #152657;
+}
+
+.gmaps {
+    margin-right: 100px;
+}
+
+/* HALAMAN BLOG */
+
+.text-about {
+    text-align: center;
+}
+
+.cardBox-blog {
+    /* flex: 1 1 30rem; */
+    margin-top: 80px;
+    width: 500px;
+    background-color: #fff;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.blog {
+    background: linear-gradient(to bottom, #ebf0ff, #fff);
+}
+
+/* HALAMAN GALERY */
+.halaman-galery {
+    background: linear-gradient(to bottom, #ebf0ff, #fff);
+
+}
+
+/* responsive media */
+@media (max-width: 900px) {
+
+    .header {
+        padding: 10px 20px;
+    }
+
+    .logoNavbar {
+        margin-left: 300px;
+        margin-top: 10px;
+    }
+
+    .header nav {
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+
+    }
+
+    .text {
+        margin-left: 80px;
+    }
+
+    .text p{
+        /* margin-top: 400px; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
