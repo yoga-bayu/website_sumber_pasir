@@ -121,28 +121,28 @@ const IndexPage = () => {
       </div>
 
       <div className="card mt-10 flex justify-center items-center text-center flex-wrap gap-4">
-                <a href="#" className="cardProduk rounded-2xl">
+                <a href="../pasir/pasirCor" className="cardProduk rounded-2xl">
                   <img src={(produk)} className="img-produk w-full h-full rounded-2xl"></img>
                 </a>
-                <a href="#" className="cardProduk rounded-2xl">
+                <a href="../batu/batuBataMerah" className="cardProduk rounded-2xl">
                   <img src={(produk1)} className="img-produk w-full h-full rounded-2xl"></img>
                 </a>
-                <a href="#" className="cardProduk rounded-2xl">
+                <a href="../pasir/pasirRangkas" className="cardProduk rounded-2xl">
                   <img src={(produk2)} className="img-produk w-full h-full rounded-2xl"></img>
                 </a>
-                <a href="#" className="cardProduk rounded-2xl">
+                <a href="../batu/batuSirdam" className="cardProduk rounded-2xl">
                   <img src={(produk3)} className="img-produk w-full h-full rounded-2xl"></img>
                 </a>
-                <a href="#" className="cardProduk rounded-2xl">
+                <a href="../batu/batuScreening" className="cardProduk rounded-2xl">
                   <img src={(produk4)} className="img-produk w-full h-full rounded-2xl"></img>
                 </a>
-                <a href="#" className="cardProduk rounded-2xl">
+                <a href="../batu/batuSk" className="cardProduk rounded-2xl">
                   <img src={(produk5)} className="img-produk w-full h-full rounded-2xl"></img>
                 </a>
-                <a href="#" className="cardProduk rounded-2xl">
+                <a href="../pasir/abuBatu" className="cardProduk rounded-2xl">
                   <img src={(produk6)} className="img-produk w-full h-full rounded-2xl"></img>
                 </a>
-                <a href="#" className="cardProduk rounded-2xl">
+                <a href="../pasir/pasirBangka" className="cardProduk rounded-2xl">
                   <img src={(produk7)} className="img-produk w-full h-full rounded-3xl"></img>
                 </a>
 
@@ -276,4 +276,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Sumber pasir</title>
+export const Head = () => <title>Sumber pasir</title> 
